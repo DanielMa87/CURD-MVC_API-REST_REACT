@@ -1,0 +1,56 @@
+@model MVC_Productos.Models.Producto
+
+<h2>Editar Producto</h2>
+<div class="row">
+ <form asp-action="Edit" method="post" class="col-md-4">@*un formulario con metodo post*@
+        
+       <!-- <hidden asp-for="Id">-->
+        
+        <div class="form-group">
+            <label asp-for="Nombre" class="Control-label"></label>
+            <input asp-for="Nombre" class="form-control">
+            <span asp-validation-for="Nombre" class="text-danger"></span>    
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Descripcion" class="Control-label"></label>
+            <input asp-for="Descripcion" class="form-control">
+            <span asp-validation-for="Descripcion" class="text-danger"></span>    
+        </div>
+        <div class="form-group">
+            <label asp-for="Precio" class="Control-label"></label>
+            <input asp-for="Precio" class="form-control">
+            <span asp-validation-for="Precio" class="text-danger"></span>    
+        </div>
+        <div class="form-group">
+            <label asp-for="CategoriaId" class="Control-label"></label>
+            <select asp-for="CategoriaId" class="form-control">
+                <option value="">--Selecciona Categoria--</option>
+                @foreach(var Categoria in ViewBag.Categorias)
+                {
+                    <option value="@Categoria.Id">@Categoria.Nombre</option>
+                }
+            </select>
+            <span asp-validation-for="CategoriaId" class="text-danger"></span>    
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ProveedorId" class="Control-label"></label>
+            <select asp-for="ProveedorId" class="form-control">
+                <option value="">--Selecciona Categoria--</option>
+                @foreach(var Proveedor in ViewBag.Proveedores)
+                {
+                    <option value="@Proveedor.Id">@Proveedor.Nombre</option>
+                }
+            </select>
+            <span asp-validation-for="ProveedorId" class="text-danger"></span>    
+        </div>
+        <br>
+         <div class="form-group">
+            <input type="submit" value="Guardar" class="btn btn-primary">
+            <a asp-action="Index" class="btn btn-danger">Cancelar</a>    
+        </div>
+
+    </form>
+
+</div>

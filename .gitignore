@@ -1,0 +1,80 @@
+# Ignore node_modules folder
+node_modules/
+obj/
+bin/
+
+# Ignore log files
+*.log
+logs/
+
+# Ignore environment files
+.env
+*.env
+
+# Ignore build outputs
+dist/
+build/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore temporary files
+*.tmp
+*.swp
+
+# Ignore compiled files
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Ignore coverage reports
+coverage/
+
+# Ignore Git-specific files
+.git/
+
+# Ignore local configuration files
+*.cproj
+*.user
+*.suo
+*.csproj.user
+*.db
+*.sqlite
+*.mdf
+*.ldf
+*.sln
+
+# Ignore launch and debug configurations
+launchSettings.json
+
+# Ignore Rider IDE files
+.idea/
+*.iml
+
+# Ignore Visual Studio Code workspace settings
+*.code-workspace
+
+# Ignore temporary files created by the OS
+$RECYCLE.BIN/
+*.pid
+*.seed
+*.pid.lock
+
+# Ignore local database files
+*.bak
+*.mdf
+*.ldf
+*.sqlite
+
+# Ignore local secrets
+secrets.json
+
+# Ignore any other local machine-specific files
+Program.cs
