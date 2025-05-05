@@ -76,5 +76,4 @@ $RECYCLE.BIN/
 # Ignore local secrets
 secrets.json
 
-# Ignore any other local machine-specific files
-Program.cs
+
